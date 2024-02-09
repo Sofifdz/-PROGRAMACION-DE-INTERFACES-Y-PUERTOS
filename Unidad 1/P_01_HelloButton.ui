@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>hola</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(209, 209, 209);</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnSaludar">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>90</y>
+      <width>281</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Wide Latin</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));
+border-color: rgb(255, 255, 255);
+border-top-color: rgb(255, 255, 255);
+border-bottom-color: rgb(255, 255, 255);
+gridline-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>HOLA</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>581</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

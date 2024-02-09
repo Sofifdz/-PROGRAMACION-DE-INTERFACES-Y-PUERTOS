@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="Logos">
+    <file>Imagenes/kenia.jpg</file>
+    <file>Imagenes/logo.png</file>
+  </qresource>
+  <qresource prefix="Variadas"/>
+</RCC>

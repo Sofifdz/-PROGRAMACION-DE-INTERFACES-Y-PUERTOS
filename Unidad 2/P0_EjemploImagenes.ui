@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>271</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Logos/Imagenes/logo.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>8514oem</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Desde ritchtext</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>201</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Logos/Imagenes/logo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>40</y>
+      <width>191</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Logos/Imagenes/logo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>171</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Logos/Imagenes/logo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>8514oem</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Desde background</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>8514oem</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Desde border image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>220</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>8514oem</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Desde image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>220</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>8514oem</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Pixmap(modificable desde programacion)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>250</y>
+      <width>181</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>250</y>
+      <width>191</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/kenia.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>811</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuhi">
+    <property name="title">
+     <string>hi</string>
+    </property>
+   </widget>
+   <addaction name="menuhi"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
