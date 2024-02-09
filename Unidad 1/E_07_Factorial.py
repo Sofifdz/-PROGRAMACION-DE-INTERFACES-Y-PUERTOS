@@ -5,7 +5,7 @@ import numpy
 from PyQt5 import uic, QtWidgets
 from numpy import double
 
-qtCreatorFile = "E_05_Promedio.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P_09_Factorial.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 
@@ -20,15 +20,9 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
     # Área de los Slots
     def calcular(self):
-        calificaciones = []
-        calificaciones.append(float(self.txtCalif1.text()))
-        calificaciones.append(float(self.txtCalif2.text()))
-        calificaciones.append(float(self.txtCalif3.text()))
-        calificaciones.append(float(self.txtCalif4.text()))
-        calificaciones.append(float(self.txtCalif5.text()))
-        promedio = numpy.average(calificaciones)
+        n = int(self.txtNumero.text())
         messageBox = QtWidgets.QMessageBox()
-        messageBox.setText(str(promedio))
+        messageBox.setText(str(math.factorial(n)))
         messageBox.exec_()
 
 

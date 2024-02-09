@@ -1,9 +1,11 @@
 import math
 import sys
+
+import numpy
 from PyQt5 import uic, QtWidgets
 from numpy import double
 
-qtCreatorFile = "E_08_PuntoMedio.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P_08_Promedio.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 
@@ -18,16 +20,15 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
     # Área de los Slots
     def calcular(self):
-        punto1 = []
-        punto2 = []
-        punto1.append(float(self.txtX1.text()))
-        punto1.append(float(self.txtY1.text()))
-        punto2.append(float(self.txtX2.text()))
-        punto2.append(float(self.txtY2.text()))
-        xMedia = (punto1[0] + punto2[0]) / 2
-        yMedia = (punto1[1] + punto2[1]) / 2
+        calificaciones = []
+        calificaciones.append(float(self.txtCalif1.text()))
+        calificaciones.append(float(self.txtCalif2.text()))
+        calificaciones.append(float(self.txtCalif3.text()))
+        calificaciones.append(float(self.txtCalif4.text()))
+        calificaciones.append(float(self.txtCalif5.text()))
+        promedio = numpy.average(calificaciones)
         messageBox = QtWidgets.QMessageBox()
-        messageBox.setText("({0}, {1})".format(xMedia, yMedia))
+        messageBox.setText(str(promedio))
         messageBox.exec_()
 
 

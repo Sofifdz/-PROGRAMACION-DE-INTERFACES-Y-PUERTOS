@@ -5,7 +5,7 @@ import numpy
 from PyQt5 import uic, QtWidgets
 from numpy import double
 
-qtCreatorFile = "E_06_Factorial.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P_10_Calificacion.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 
@@ -20,9 +20,21 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
     # Área de los Slots
     def calcular(self):
-        n = int(self.txtNumero.text())
+        calificaion = float(self.txtCalif.text())
+        if calificaion == 10:
+            nota = 'A'
+        elif calificaion >= 9:
+            nota = 'B'
+        elif calificaion >= 8:
+            nota = 'C'
+        elif calificaion >= 7:
+            nota = 'D'
+        elif calificaion >= 6:
+            nota = 'E'
+        else:
+            nota = 'F'
         messageBox = QtWidgets.QMessageBox()
-        messageBox.setText(str(math.factorial(n)))
+        messageBox.setText(nota)
         messageBox.exec_()
 
 

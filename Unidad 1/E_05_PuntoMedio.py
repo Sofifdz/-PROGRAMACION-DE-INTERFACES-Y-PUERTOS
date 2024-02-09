@@ -1,11 +1,9 @@
 import math
 import sys
-
-import numpy
 from PyQt5 import uic, QtWidgets
 from numpy import double
 
-qtCreatorFile = "E_07_Calificacion.ui"  # Nombre del archivo aquí.
+qtCreatorFile = "P_07_PuntoMedio.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 
@@ -20,21 +18,16 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
     # Área de los Slots
     def calcular(self):
-        calificaion = float(self.txtCalif.text())
-        if calificaion == 10:
-            nota = 'A'
-        elif calificaion >= 9:
-            nota = 'B'
-        elif calificaion >= 8:
-            nota = 'C'
-        elif calificaion >= 7:
-            nota = 'D'
-        elif calificaion >= 6:
-            nota = 'E'
-        else:
-            nota = 'F'
+        punto1 = []
+        punto2 = []
+        punto1.append(float(self.txtX1.text()))
+        punto1.append(float(self.txtY1.text()))
+        punto2.append(float(self.txtX2.text()))
+        punto2.append(float(self.txtY2.text()))
+        xMedia = (punto1[0] + punto2[0]) / 2
+        yMedia = (punto1[1] + punto2[1]) / 2
         messageBox = QtWidgets.QMessageBox()
-        messageBox.setText(nota)
+        messageBox.setText("({0}, {1})".format(xMedia, yMedia))
         messageBox.exec_()
 
 
