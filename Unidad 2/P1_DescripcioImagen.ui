@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>593</width>
-    <height>444</height>
+    <width>783</width>
+    <height>515</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(199, 199, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -27,7 +30,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/logo uat.jpg</pixmap>
+     <pixmap>:/Logos/logo uat.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -36,17 +39,17 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>620</x>
       <y>0</y>
-      <width>121</width>
-      <height>81</height>
+      <width>141</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/logo fians.jpg</pixmap>
+     <pixmap>:/Logos/logo fians.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -55,17 +58,17 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>250</y>
-      <width>161</width>
-      <height>131</height>
+      <x>650</x>
+      <y>370</y>
+      <width>131</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo.png</pixmap>
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/equipo.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -74,17 +77,20 @@
    <widget class="QLabel" name="img_persona">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>230</y>
-      <width>161</width>
-      <height>131</height>
+      <x>0</x>
+      <y>0</y>
+      <width>151</width>
+      <height>101</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Variadas/logo uat.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo.png</pixmap>
+     <pixmap>:/Variadas/logo uat.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -93,11 +99,16 @@
    <widget class="QPushButton" name="btnAtras">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>380</y>
-      <width>56</width>
-      <height>17</height>
+      <x>40</x>
+      <y>430</y>
+      <width>101</width>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Wide Latin&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Atras</string>
@@ -106,11 +117,15 @@
    <widget class="QPushButton" name="btnAdelante">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>380</y>
-      <width>56</width>
-      <height>17</height>
+      <x>170</x>
+      <y>430</y>
+      <width>121</width>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Wide Latin&quot;;
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Adelante</string>
@@ -119,8 +134,8 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>130</y>
+      <x>360</x>
+      <y>160</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -134,14 +149,14 @@
      </font>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Nombre</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>170</y>
+      <x>360</x>
+      <y>200</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -155,14 +170,14 @@
      </font>
     </property>
     <property name="text">
-     <string>Pasamiento:</string>
+     <string>Pasatiempo</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>220</y>
+      <x>360</x>
+      <y>250</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -182,8 +197,8 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>270</y>
+      <x>360</x>
+      <y>300</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -200,13 +215,121 @@
      <string>Tipo sangre:</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="txtNombre">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>180</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtPasatiempo">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>220</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtEdad">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>270</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtTipoSangre">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>310</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgPersonas">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>160</y>
+      <width>231</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 5px solid black;
+border-radius: 10px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Logos/Imagenes/logo fians.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo uat.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>10</y>
+      <width>141</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Logos/Imagenes/logo fians.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>593</width>
+     <width>783</width>
      <height>18</height>
     </rect>
    </property>

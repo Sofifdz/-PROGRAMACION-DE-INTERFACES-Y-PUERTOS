@@ -6,66 +6,31 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>555</width>
-    <height>444</height>
+    <width>681</width>
+    <height>484</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 0, 0);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>161</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>10</y>
-      <width>101</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>320</y>
-      <width>111</width>
-      <height>81</height>
+      <x>560</x>
+      <y>360</y>
+      <width>121</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo.png</pixmap>
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/equipo.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -74,7 +39,7 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>90</x>
       <y>170</y>
       <width>161</width>
       <height>61</height>
@@ -82,52 +47,137 @@
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
       <pointsize>14</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 0, 0);</string>
+    </property>
     <property name="text">
      <string>Usuario:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="img_persona_4">
+   <widget class="QLabel" name="imgPersona">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>160</y>
-      <width>141</width>
-      <height>121</height>
+      <x>410</x>
+      <y>130</y>
+      <width>231</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 3px solid ;
+border-color: rgb(255, 255, 255);
+border-radius: 9px;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/Logos/Imagenes/logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbEquipo">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>230</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nirmala UI</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_persona_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo.png</pixmap>
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo uat.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QLabel" name="img_persona_6">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>0</y>
+      <width>111</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>220</y>
-      <width>161</width>
-      <height>21</height>
+      <y>110</y>
+      <width>621</width>
+      <height>231</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 0, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
+   <zorder>label_5</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>imgPersona</zorder>
+   <zorder>cbEquipo</zorder>
+   <zorder>img_persona_5</zorder>
+   <zorder>img_persona_6</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>555</width>
+     <width>681</width>
      <height>18</height>
     </rect>
    </property>

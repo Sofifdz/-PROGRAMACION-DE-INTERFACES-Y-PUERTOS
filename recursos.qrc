@@ -1,9 +1,13 @@
 <RCC>
   <qresource prefix="Logos">
-    <file>logo uat.jpg</file>
-    <file>logo fians.jpg</file>
-    <file>Imagenes/kenia.jpg</file>
-    <file>Imagenes/logo.png</file>
+    <file>Imagenes/equipo.jpeg</file>
+    <file>Imagenes/logo fians.jpg</file>
+    <file>Imagenes/logo uat.jpg</file>
   </qresource>
-  <qresource prefix="Variadas"/>
+  <qresource prefix="Variadas">
+    <file>Imagenes/badillo .png</file>
+    <file>Imagenes/GonzalezUriel.png</file>
+    <file>Imagenes/JuarezBeltran.png</file>
+    <file>Imagenes/sofi.png</file>
+  </qresource>
 </RCC>
