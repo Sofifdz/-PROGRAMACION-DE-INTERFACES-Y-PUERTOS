@@ -20,12 +20,26 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         print("Hiciste clic")
         self.txt_Nombre.setText("Kenia Os")
         self.txt_Edad.setText("24")
-        self.txt_Ocupacion.setText("Cantante¡¡¡!!")
+        self.txt_Ocupacion.setText("Cantante¡¡¡!!!")
 
-    def borrar(self):
-        self.txt_Nombre.setText("")
-        self.txt_Edad.setText("")
-        self.txt_Ocupacion.setText("")
+    def borrar(self,event):
+
+            reply = QtWidgets.QMessageBox.warning(self, "Mensaje", "Seguro que quieres borrar la info de la kenini?", QtWidgets.QMessageBox.Yes,
+                                                   QtWidgets.QMessageBox.No)
+
+            if reply == QtWidgets.QMessageBox.Yes:
+                self.txt_Nombre.setText("")
+                self.txt_Edad.setText("")
+                self.txt_Ocupacion.setText("")
+            else:
+                msgBox = QtWidgets.QMessageBox()
+                msgBox.setText("¡¡¡BIENVENIDO KENINI!!!")
+                resp = msgBox.exec_()
+                print("Respuesta: ", resp)
+
+
+
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
