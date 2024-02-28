@@ -5,7 +5,9 @@
     <file>Imagenes/logo uat.jpg</file>
   </qresource>
   <qresource prefix="Variadas">
+    <file>Imagenes/kenia os.png</file>
     <file>Imagenes/badillo .png</file>
+    <file>Imagenes/images.jpg</file>
     <file>Imagenes/GonzalezUriel.png</file>
     <file>Imagenes/JuarezBeltran.png</file>
     <file>Imagenes/sofi.png</file>
