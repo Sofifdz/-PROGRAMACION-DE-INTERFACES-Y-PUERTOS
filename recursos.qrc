@@ -4,7 +4,16 @@
     <file>Imagenes/logo fians.jpg</file>
     <file>Imagenes/logo uat.jpg</file>
   </qresource>
+  <qresource prefix="mascotas">
+    <file>Imagenes/Macotas/conejo.jpg</file>
+    <file>Imagenes/Macotas/cuyo.jpg</file>
+    <file>Imagenes/Macotas/gato.jpg</file>
+    <file>Imagenes/Macotas/hamster.jpg</file>
+    <file>Imagenes/Macotas/perro.jpg</file>
+  </qresource>
   <qresource prefix="Variadas">
+    <file>Imagenes/fondo.jpg</file>
+    <file>Imagenes/boton.jpg</file>
     <file>Imagenes/kenia os.png</file>
     <file>Imagenes/badillo .png</file>
     <file>Imagenes/images.jpg</file>
