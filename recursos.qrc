@@ -12,6 +12,7 @@
     <file>Imagenes/Macotas/perro.jpg</file>
   </qresource>
   <qresource prefix="Variadas">
+    <file>Imagenes/fondo2.jpg</file>
     <file>Imagenes/fondo.jpg</file>
     <file>Imagenes/boton.jpg</file>
     <file>Imagenes/kenia os.png</file>
