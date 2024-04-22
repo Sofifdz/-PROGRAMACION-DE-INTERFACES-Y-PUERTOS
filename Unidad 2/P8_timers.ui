@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>566</width>
+    <width>676</width>
     <height>501</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 127);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -57,7 +60,7 @@
      <rect>
       <x>30</x>
       <y>160</y>
-      <width>51</width>
+      <width>131</width>
       <height>71</height>
      </rect>
     </property>
@@ -95,8 +98,8 @@
    <widget class="QLabel" name="logofac">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>20</y>
+      <x>540</x>
+      <y>10</y>
       <width>121</width>
       <height>91</height>
      </rect>
@@ -114,9 +117,9 @@
    <widget class="QTextBrowser" name="txtNumero">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>120</x>
       <y>180</y>
-      <width>161</width>
+      <width>171</width>
       <height>41</height>
      </rect>
     </property>
@@ -126,7 +129,7 @@
      <rect>
       <x>130</x>
       <y>240</y>
-      <width>71</width>
+      <width>151</width>
       <height>31</height>
      </rect>
     </property>
@@ -139,8 +142,8 @@
      <rect>
       <x>100</x>
       <y>300</y>
-      <width>121</width>
-      <height>71</height>
+      <width>201</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="text">
@@ -150,7 +153,7 @@
    <widget class="QLabel" name="logoeq">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>550</x>
       <y>400</y>
       <width>121</width>
       <height>91</height>
@@ -169,9 +172,9 @@
    <widget class="QTextBrowser" name="txtNumero_2">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>460</x>
       <y>180</y>
-      <width>161</width>
+      <width>191</width>
       <height>41</height>
      </rect>
     </property>
@@ -179,10 +182,10 @@
    <widget class="QLabel" name="txtContador_2">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>300</y>
-      <width>121</width>
-      <height>71</height>
+      <x>340</x>
+      <y>320</y>
+      <width>171</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="text">
@@ -192,9 +195,9 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>350</x>
       <y>160</y>
-      <width>51</width>
+      <width>91</width>
       <height>81</height>
      </rect>
     </property>
@@ -213,9 +216,9 @@
    <widget class="QPushButton" name="btn_iniciar2">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>410</x>
       <y>240</y>
-      <width>71</width>
+      <width>161</width>
       <height>31</height>
      </rect>
     </property>

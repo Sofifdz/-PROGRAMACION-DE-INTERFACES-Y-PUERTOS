@@ -12,15 +12,9 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
 
-
         # Área de los Signals
 
-
-
          # Área de los Slots
-
-
-
 
 
 if __name__ == "__main__":

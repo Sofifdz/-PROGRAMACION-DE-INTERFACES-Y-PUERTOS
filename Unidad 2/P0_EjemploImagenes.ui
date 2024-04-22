@@ -24,7 +24,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Logos/Imagenes/logo.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -60,6 +63,9 @@
     <property name="text">
      <string/>
     </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
+    </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
@@ -76,6 +82,9 @@
     <property name="text">
      <string/>
     </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
+    </property>
    </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
@@ -91,6 +100,9 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_9">
@@ -179,7 +191,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo.png</pixmap>
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -198,7 +210,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/kenia.jpg</pixmap>
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

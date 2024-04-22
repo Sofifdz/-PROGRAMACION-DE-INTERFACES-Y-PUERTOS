@@ -11,18 +11,11 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         Ui_MainWindow.__init__(self)
         self.setupUi(self)
 
-
-
         # Área de los Signals
         self.lcdNumber.setNumDigits(8)#mejora el tamaño para que quepan los digitos, en este caso 8, aunque no existan
         self.lcdNumber.display(123567)
 
-
-
          # Área de los Slots
-
-
-
 
 
 if __name__ == "__main__":

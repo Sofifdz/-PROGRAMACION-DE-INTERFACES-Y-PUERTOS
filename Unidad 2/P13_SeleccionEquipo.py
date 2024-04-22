@@ -16,8 +16,8 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         # Área de los Signals
         self.rbUriel.clicked.connect(self.clicUriel)
         self.rbEduardo.toggled.connect(self.clicEduardo)
-        self.rbBadillo.clicked.connect(self.clicEduardo)
-        self.rbSofia.clicked.connect(self.clicEduardo)
+        self.rbBadillo.clicked.connect(self.clicBadillo)
+        self.rbSofia.clicked.connect(self.clicSofia)
 
         self.uriel = " "
         self.eduardo = " "
@@ -29,7 +29,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def clicEduardo(self):
        print("hisiste clic a eduardo")
-    def selfBadillo(self):
+    def clicBadillo(self):
         if self.cbBadillo.isChecked():
             print("badillo true")
             self.badillo = "Badillo\n"
@@ -39,7 +39,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.badillo = " "
         self.txtEquipo.setPlainText(self.uriel +self.badillo+self.eduardo+self.sofi)
 
-    def selfSofi(self):
+    def clicSofia(self):
         if self.cbSofi.isChecked():
             print("sofi true")
             self.sofi = "Sofi\n"
