@@ -1,50 +1,48 @@
 import sys
-from PyQt5 import uic, QtWidgets,QtGui
-qtCreatorFile3 = "ventana1.ui"  # Nombre del archivo aquí.
-Ui_MainWindow, QtBaseClass3 = uic.loadUiType(qtCreatorFile3)
+from PyQt5 import uic, QtWidgets, QtCore
 
-class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
+##########################################################################
+
+qtCreatorFile1 = "ventana1.ui"  # Nombre del archivo aquí.
+Ui_MainWindow1, QtBaseClass1 = uic.loadUiType(qtCreatorFile1)
+
+class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow1):
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
-        Ui_MainWindow.__init__(self)
+        Ui_MainWindow1.__init__(self)
         self.setupUi(self)
-
+        # Área de los Signals / Configuracion
         self.btn_sumar.clicked.connect(self.sumar)
-
-        # Área de los Signals
-
     # Área de los Slots
     def sumar(self):
-        try:
-          a = int(self.txt_A.text())
-          b = int(self.txt_B.text())
-          r = a+b
+        a = int(self.txt_a.text())
+        b = int(self.txt_b.text())
+        r = a + b
+        self.dialogo = MyDialog()
+        self.dialogo.setModal(False)
+        self.dialogo.txt_resultado.setText(str(r))
+        self.dialogo.show()
 
-          self.dialogo = MyDialog()
-          self.dialogo.setModal(False)
-          self.dialogo.txt_resultado.setText(str(r))
-          self.dialogo.show()
+##########################################################################
 
-
-        except Exception as error:
-            print(error)
-
-
-
-
-##################################################################################
 qtCreatorFile3 = "ventana2.ui"  # Nombre del archivo aquí.
 Ui_dialog, QtBaseClass3 = uic.loadUiType(qtCreatorFile3)
 
-class MyDialog(QtWidgets.QDialog,Ui_dialog):
+class MyDialog(QtWidgets.QDialog, Ui_dialog):
     def __init__(self):
         QtWidgets.QDialog.__init__(self)
         Ui_dialog.__init__(self)
         self.setupUi(self)
 
+        # Área de los Signals / Configuracion
+
+    # Área de los Slots
+
+
+##########################################################################
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
-    window = MyApp()
+    window = MyMainWindow()
     window.show()
     sys.exit(app.exec_())
