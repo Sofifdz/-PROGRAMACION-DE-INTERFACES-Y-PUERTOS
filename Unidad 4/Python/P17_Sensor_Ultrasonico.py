@@ -40,7 +40,6 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.btn_accion.setText("DESCONECTAR")
             self.txt_estado.setText("Conectado")
             self.txt_estado.setStyleSheet("color: green;")
-
     def lecturaArduino(self):
         if not self.arduino is None and self.arduino.isOpen():
             if self.arduino.inWaiting():

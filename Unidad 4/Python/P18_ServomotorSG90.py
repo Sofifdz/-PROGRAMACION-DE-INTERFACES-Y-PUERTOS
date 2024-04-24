@@ -13,18 +13,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # Área de los Signals
         self.btn_accion.clicked.connect(self.accion)
-
         self.arduino = None
-
-        #self.segundoPlano = QtCore.QTimer()
-        #self.segundoPlano.timeout.connect(self.lecturaArduino)
-
-        '''self.btn_control_led.clicked.connect(self.control_led)'''
-
         self.estado_led = 1
         self.btn_accion.clicked.connect(self.accion)
-        self.btn_actualizar.clicked.connect(self.enviar_a_arduino)
-
+        self.btn_actualizar.clicked.connect(self.envio)
         self.arduino = None
 
     #Area de Slots
@@ -32,7 +24,6 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         if not self.arduino is None and self.arduino.isOpen():
            rpm = self.textServoValor.Text()
            self.arduino.write(rpm.encode)
-
     def accion(self):
         texto_boton = self.btn_accion.text()
         com = self.txt_com.text()
@@ -53,26 +44,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.btn_accion.setText("Desconectar")
             self.txt_estado.setText("Conectado")
 
-    def lecturaArduino(self):
-        if not self.arduino is None and self.arduino.isOpen():
-            if self.arduino.inWaiting():
-                cadena = self.arduino.readline()
-                cadena = cadena.decode()
-                cadena = cadena.strip()
-                #print(cadena)
-                if cadena != "":
-                    self.datos.addItem(cadena)
-                    self.datos.setCurrentRow(self.datos.count()-1)
-
-    def enviar_a_arduino(self):
+    def envio(self):
         if self.arduino is not None and self.arduino.isOpen():
             rpm = self.txtServoValor.text()
             self.arduino.write(rpm.encode())
-
-    def closeEvent(self, event):
-        if self.arduino is not None and self.arduino.isOpen():
-            self.arduino.close()
-        event.accept()
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)

@@ -12,9 +12,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # Área de los Signals
         self.btn_accion.clicked.connect(self.accion)
-
         self.arduino = None
-
         self.segundoPlano = QtCore.QTimer()
         self.segundoPlano.timeout.connect(self.lecturaArduino)
 
