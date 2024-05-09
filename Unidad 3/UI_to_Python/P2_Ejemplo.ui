@@ -35,7 +35,7 @@ border-radius: 10px;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/Logos/Imagenes/equipo.jpeg</pixmap>
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/equipo.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -59,7 +59,7 @@ border-radius: 10px;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/Logos/Imagenes/logo fians.jpg</pixmap>
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo fians.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -83,23 +83,7 @@ border-radius: 10px;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/Logos/Imagenes/logo uat.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="rec4">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>380</y>
-      <width>171</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
+     <pixmap resource="../recursos.qrc">:/Logos/Imagenes/logo uat.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -127,8 +111,8 @@ border-radius: 10px;
    <widget class="QLineEdit" name="nombre">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>140</y>
+      <x>70</x>
+      <y>200</y>
       <width>221</width>
       <height>61</height>
      </rect>
@@ -140,43 +124,22 @@ border-radius: 10px;
      </font>
     </property>
     <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_saludo">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>250</y>
-      <width>171</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI Black</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>SALUDO</string>
+     <string>H</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_saludomundo">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>190</y>
-      <width>171</width>
-      <height>91</height>
+      <x>360</x>
+      <y>200</y>
+      <width>211</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Black</family>
-      <pointsize>11</pointsize>
+      <family>Rockwell Extra Bold</family>
+      <pointsize>10</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>

@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="Logos">
+    <file>recursos.qrc</file>
     <file>Imagenes/equipo.jpeg</file>
     <file>Imagenes/logo fians.jpg</file>
     <file>Imagenes/logo uat.jpg</file>

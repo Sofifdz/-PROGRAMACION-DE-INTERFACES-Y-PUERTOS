@@ -1,4 +1,6 @@
-from UI_to_Python import P2_Ejemplo as interfaz
+from PyQt5.uic.properties import QtCore
+
+import P2_Ejemplo as interfaz
 import sys
 from PyQt5 import uic, QtWidgets
 #qtCreatorFile = "P1_Ejemplo.ui"  # Nombre del archivo aquí.
@@ -14,7 +16,6 @@ class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
 
         self.btn_saludomundo.clicked.connect(self.saludo)
 
-
     # Área de los Slots
     def saludo(self):
        try:
@@ -22,6 +23,12 @@ class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
            self.btn_saludomundo.hide()
        except Exception as e:
            print(e)
+
+    def mensaje(self, msj):
+        m = QtWidgets.QMessageBox()
+        m.setText(msj)
+        m.exec_()
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
