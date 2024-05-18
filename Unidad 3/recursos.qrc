@@ -37,6 +37,7 @@
     <file>Imagenes/IMCbajo4.jpg</file>
   </qresource>
   <qresource prefix="Variadas">
+    <file>Imagenes/tienda.jpg</file>
     <file>Imagenes/color_morado.jpg</file>
     <file>Imagenes/color_rojo.jpg</file>
     <file>Imagenes/color_rosa.jpg</file>
