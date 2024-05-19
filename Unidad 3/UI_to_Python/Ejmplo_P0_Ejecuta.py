@@ -1,4 +1,4 @@
-from UI_to_Python import P1_Ejemplo
+import P1_Ejemplo
 import sys
 from PyQt5 import uic, QtWidgets
 #qtCreatorFile = "P1_Ejemplo.ui"  # Nombre del archivo aquí.
@@ -7,6 +7,7 @@ from PyQt5 import uic, QtWidgets
 class MyApp(QtWidgets.QMainWindow, P1_Ejemplo.Ui_MainWindow):
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
+        P1_Ejemplo.Ui_MainWindow.__init__(self)
         P1_Ejemplo.Ui_MainWindow.__init__(self)
         self.setupUi(self)
 
